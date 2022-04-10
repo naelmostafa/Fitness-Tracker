@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.naelmostafa.fitnesstracker.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Button fx:id="addButton" alignment="CENTER" mnemonicParsing="false" onAction="#HandelOnActionAdd" prefHeight="34.0" prefWidth="338.0" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label prefHeight="34.0" prefWidth="338.0" text="Activity">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="activityText" prefHeight="34.0" prefWidth="338.0" promptText="Activity" GridPane.columnIndex="1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextField>
+      <Label prefHeight="34.0" prefWidth="338.0" text="Duration" GridPane.rowIndex="1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="durationText" prefHeight="34.0" prefWidth="338.0" promptText="Duration" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="calcArea" editable="false" prefHeight="225.0" prefWidth="338.0" text="Add activity:" GridPane.rowIndex="3">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="resultArea" editable="false" prefHeight="225.0" prefWidth="338.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="calcButton" mnemonicParsing="false" onAction="#HandelOnActionCalc" prefHeight="34.0" prefWidth="338.0" text="Calculate" GridPane.rowIndex="4">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset" mnemonicParsing="false" onAction="#HandelOnActionReset" prefHeight="34.0" prefWidth="338.0" text="Reset" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" prefHeight="34.0" prefWidth="338.0" textFill="RED" GridPane.rowIndex="2">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
