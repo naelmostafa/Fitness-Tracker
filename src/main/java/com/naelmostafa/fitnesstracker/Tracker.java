@@ -75,7 +75,7 @@ public class Tracker {
         caloriesBurnt = duration * 5;
         totalHeartRate += heartRateInc;
         totalCaloriesBurnt += caloriesBurnt;
-        activitiesList[activityIndex] = new Activity("Strength Workout", duration, caloriesBurnt, heartRateInc);
+        activitiesList[activityIndex++] = new Activity("Strength Workout", duration, caloriesBurnt, heartRateInc);
     }
 
     //SORTING METHODS
